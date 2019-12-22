@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="GaU-PX-I26">
             <objects>
-                <viewController id="JWX-Xi-hET" sceneMemberID="viewController">
+                <viewController id="JWX-Xi-hET" customClass="SignUpViewController" customModule="Auto_Layout_Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8E-o3-nA8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +173,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-YN-QeH">
                                                         <rect key="frame" x="0.0" y="140" width="254" height="60"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="0mL-Qy-PSO">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0mL-Qy-PSO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="254" height="49"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -227,7 +227,7 @@
                                                 <fragment content="Sign Up with ">
                                                     <attributes>
                                                         <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                        <font key="NSFont" size="12" name=".SFNS-Regular"/>
+                                                        <font key="NSFont" metaFont="label" size="12"/>
                                                     </attributes>
                                                 </fragment>
                                                 <fragment content="Facebook">
@@ -294,6 +294,11 @@
                         <viewLayoutGuide key="safeArea" id="K9S-gk-dMI"/>
                     </view>
                     <navigationItem key="navigationItem" id="4K2-B7-ckx"/>
+                    <connections>
+                        <outlet property="txtMail" destination="i8i-FK-cOv" id="oF5-ds-vI9"/>
+                        <outlet property="txtName" destination="jZE-Ev-efq" id="Ybo-JI-Cva"/>
+                        <outlet property="txtPassword" destination="0mL-Qy-PSO" id="fLV-oq-Zcp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bva-Gq-ALS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,7 +326,7 @@
     <resources>
         <image name="logo" width="1024" height="1024"/>
         <namedColor name="TintColor">
-            <color red="0.90325838329999997" green="0.29051518440000001" blue="0.096868343649999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.90299999713897705" green="0.29100000858306885" blue="0.097000002861022949" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

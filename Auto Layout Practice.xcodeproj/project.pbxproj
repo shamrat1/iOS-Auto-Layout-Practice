@@ -17,6 +17,7 @@
 		C6FA86F723AF3D100006187B /* UIBUttonAndDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86F623AF3D100006187B /* UIBUttonAndDesign.swift */; };
 		C6FA86F923AF53CE0006187B /* UIViewAndDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86F823AF53CE0006187B /* UIViewAndDesign.swift */; };
 		C6FA86FB23AF619C0006187B /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86FA23AF619C0006187B /* UITextViewExtension.swift */; };
+		C6FA86FD23AF64740006187B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86FC23AF64740006187B /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C6FA86F623AF3D100006187B /* UIBUttonAndDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBUttonAndDesign.swift; sourceTree = "<group>"; };
 		C6FA86F823AF53CE0006187B /* UIViewAndDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAndDesign.swift; sourceTree = "<group>"; };
 		C6FA86FA23AF619C0006187B /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		C6FA86FC23AF64740006187B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				C6FA86DF23AF23010006187B /* AppDelegate.swift */,
 				C6FA86E123AF23010006187B /* SceneDelegate.swift */,
 				C6FA86E323AF23010006187B /* ViewController.swift */,
+				C6FA86FC23AF64740006187B /* SignUpViewController.swift */,
 				C6FA86E523AF23010006187B /* Main.storyboard */,
 				C6FA86E823AF232D0006187B /* Assets.xcassets */,
 				C6FA86EA23AF232E0006187B /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 			files = (
 				C6FA86FB23AF619C0006187B /* UITextViewExtension.swift in Sources */,
 				C6FA86F723AF3D100006187B /* UIBUttonAndDesign.swift in Sources */,
+				C6FA86FD23AF64740006187B /* SignUpViewController.swift in Sources */,
 				C6FA86F423AF33AF0006187B /* CustomButton.swift in Sources */,
 				C6FA86E423AF23010006187B /* ViewController.swift in Sources */,
 				C6FA86E023AF23010006187B /* AppDelegate.swift in Sources */,

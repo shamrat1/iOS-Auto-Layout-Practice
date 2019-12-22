@@ -16,11 +16,19 @@ extension UITextField {
         
         if isSecure {
             let button = UIButton(frame: imageView.frame)
-            button.setImage(#imageLiteral(resourceName: "eye"), for: .normal)
-            button.setImage(#imageLiteral(resourceName: "cross"), for: .selected)
+            button.setImage(UIImage(named: "eye"), for: .normal)
+            button.setImage(UIImage(named: "cross"), for: .selected)
+            button.isSelected = true
+            button.addTarget(self, action: #selector(viewButton), for: .touchUpInside)
+            rightView = button
         }else {
             rightView = imageView
         }
         rightViewMode = .always
+    }
+    
+    @objc func viewButton(sender: UIButton){
+        self.isSecureTextEntry = !self.isSecureTextEntry
+        sender.isSelected = !sender.isSelected
     }
 }
