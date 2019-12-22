@@ -99,11 +99,11 @@
             <objects>
                 <viewController id="JWX-Xi-hET" customClass="SignUpViewController" customModule="Auto_Layout_Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8E-o3-nA8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zox-Cr-pt8">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQ1-r9-BYg">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
@@ -254,6 +254,9 @@
                                                 <rect key="frame" x="250.5" y="6" width="37" height="28"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <state key="normal" title="Log In"/>
+                                                <connections>
+                                                    <segue destination="9Cw-Ab-pTa" kind="show" id="c4D-K7-dUc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -310,11 +313,11 @@
             <objects>
                 <viewController id="9Cw-Ab-pTa" customClass="SignInViewController" customModule="Auto_Layout_Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lob-GU-Jcd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFp-9d-FuJ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzM-fN-ioh">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
@@ -423,6 +426,9 @@
                                                 <rect key="frame" x="254.5" y="6" width="71" height="28"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <state key="normal" title="Create Now"/>
+                                                <connections>
+                                                    <segue destination="JWX-Xi-hET" kind="show" id="VmI-de-1Pn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -497,4 +503,8 @@
             <color red="0.90299999713897705" green="0.29100000858306885" blue="0.097000002861022949" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="c4D-K7-dUc"/>
+        <segue reference="VmI-de-1Pn"/>
+    </inferredMetricsTieBreakers>
 </document>
