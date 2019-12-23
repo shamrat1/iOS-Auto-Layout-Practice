@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C635072323AF749B0072FDBA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635072223AF749B0072FDBA /* SignInViewController.swift */; };
+		C6833C2623B0774500682D5C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6833C2523B0774500682D5C /* TabBarViewController.swift */; };
+		C6833C2823B0788C00682D5C /* UIVIewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6833C2723B0788C00682D5C /* UIVIewControllerExtension.swift */; };
 		C6FA86E023AF23010006187B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86DF23AF23010006187B /* AppDelegate.swift */; };
 		C6FA86E223AF23010006187B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86E123AF23010006187B /* SceneDelegate.swift */; };
 		C6FA86E423AF23010006187B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86E323AF23010006187B /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		C635072223AF749B0072FDBA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C6833C2523B0774500682D5C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C6833C2723B0788C00682D5C /* UIVIewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtension.swift; sourceTree = "<group>"; };
 		C6FA86DC23AF23010006187B /* Auto Layout Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Layout Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FA86DF23AF23010006187B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FA86E123AF23010006187B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6833C2423B0738600682D5C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C635072223AF749B0072FDBA /* SignInViewController.swift */,
+				C6FA86E323AF23010006187B /* ViewController.swift */,
+				C6FA86FC23AF64740006187B /* SignUpViewController.swift */,
+				C6833C2523B0774500682D5C /* TabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C6FA86D323AF23010006187B = {
 			isa = PBXGroup;
 			children = (
@@ -68,12 +83,10 @@
 		C6FA86DE23AF23010006187B /* Auto Layout Practice */ = {
 			isa = PBXGroup;
 			children = (
+				C6833C2423B0738600682D5C /* Controllers */,
 				C6FA86F523AF3CF30006187B /* Extension */,
 				C6FA86DF23AF23010006187B /* AppDelegate.swift */,
 				C6FA86E123AF23010006187B /* SceneDelegate.swift */,
-				C6FA86E323AF23010006187B /* ViewController.swift */,
-				C6FA86FC23AF64740006187B /* SignUpViewController.swift */,
-				C635072223AF749B0072FDBA /* SignInViewController.swift */,
 				C6FA86E523AF23010006187B /* Main.storyboard */,
 				C6FA86E823AF232D0006187B /* Assets.xcassets */,
 				C6FA86EA23AF232E0006187B /* LaunchScreen.storyboard */,
@@ -89,6 +102,7 @@
 				C6FA86F823AF53CE0006187B /* UIViewAndDesign.swift */,
 				C6FA86F323AF33AF0006187B /* CustomButton.swift */,
 				C6FA86FA23AF619C0006187B /* UITextViewExtension.swift */,
+				C6833C2723B0788C00682D5C /* UIVIewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -172,7 +186,9 @@
 				C635072323AF749B0072FDBA /* SignInViewController.swift in Sources */,
 				C6FA86E023AF23010006187B /* AppDelegate.swift in Sources */,
 				C6FA86F923AF53CE0006187B /* UIViewAndDesign.swift in Sources */,
+				C6833C2623B0774500682D5C /* TabBarViewController.swift in Sources */,
 				C6FA86E223AF23010006187B /* SceneDelegate.swift in Sources */,
+				C6833C2823B0788C00682D5C /* UIVIewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
