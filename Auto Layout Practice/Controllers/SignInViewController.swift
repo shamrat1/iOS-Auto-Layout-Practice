@@ -20,6 +20,10 @@ class SignInViewController: UIViewController {
     }
     
 
-  
+    @IBAction func SignIn(_ sender: Any) {
+        UserDefaults.standard.set("loggedin", forKey: "accessToken")
+        changeRoot()
+    }
+    
 
 }
