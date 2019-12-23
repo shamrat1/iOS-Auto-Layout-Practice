@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().isTranslucent = true
         let accessToken = UserDefaults.standard.value(forKey: "accessToken")
         print(accessToken.debugDescription)
         if accessToken != nil {

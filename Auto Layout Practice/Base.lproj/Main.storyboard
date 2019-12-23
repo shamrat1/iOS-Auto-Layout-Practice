@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qNz-QR-IwZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pDm-eY-oih">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -498,14 +498,131 @@
                     <view key="view" contentMode="scaleToFill" id="e2a-n8-AlQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBQ-Rk-dPC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="290"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Will You Travel By ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-A0-eEm">
+                                        <rect key="frame" x="81.5" y="130.5" width="251.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.59346569010000005" blue="0.48878651340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qoj-A0-eEm" firstAttribute="centerX" secondItem="jBQ-Rk-dPC" secondAttribute="centerX" id="d6B-kZ-WVg"/>
+                                    <constraint firstItem="qoj-A0-eEm" firstAttribute="centerY" secondItem="jBQ-Rk-dPC" secondAttribute="centerY" id="xYY-yW-0cY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDL-29-dpK" customClass="CustomView" customModule="Auto_Layout_Practice" customModuleProvider="target">
+                                <rect key="frame" x="30" y="330" width="163" height="166"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tram.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wRR-t9-EDk">
+                                        <rect key="frame" x="51.5" y="35" width="60" height="63.5"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="RMj-OI-QX6"/>
+                                            <constraint firstAttribute="height" constant="60" id="jah-i9-tFv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W74-CC-KNJ">
+                                        <rect key="frame" x="8" y="104.5" width="147" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bDL-29-dpK" secondAttribute="height" multiplier="158:161" id="4cD-V4-n1R"/>
+                                    <constraint firstItem="wRR-t9-EDk" firstAttribute="centerY" secondItem="bDL-29-dpK" secondAttribute="centerY" multiplier="0.8" id="At1-Qo-aVX"/>
+                                    <constraint firstItem="wRR-t9-EDk" firstAttribute="centerX" secondItem="bDL-29-dpK" secondAttribute="centerX" id="Zp6-Q7-Sa4"/>
+                                    <constraint firstItem="W74-CC-KNJ" firstAttribute="top" secondItem="wRR-t9-EDk" secondAttribute="bottom" constant="8" id="nMT-AW-1x4"/>
+                                    <constraint firstAttribute="trailing" secondItem="W74-CC-KNJ" secondAttribute="trailing" constant="8" id="sIC-bA-T9m"/>
+                                    <constraint firstItem="W74-CC-KNJ" firstAttribute="leading" secondItem="bDL-29-dpK" secondAttribute="leading" constant="8" id="zSh-ZB-Vn3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mn8-MO-E1S" customClass="CustomView" customModule="Auto_Layout_Practice" customModuleProvider="target">
+                                <rect key="frame" x="221" y="330" width="163" height="166"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BnF-fD-2dx">
+                                        <rect key="frame" x="51.5" y="28.5" width="60" height="59"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="HCz-IC-0NB"/>
+                                            <constraint firstAttribute="height" constant="60" id="kvH-oj-OhF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIb-8v-cmH">
+                                        <rect key="frame" x="8" y="96" width="147" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="UIb-8v-cmH" firstAttribute="top" secondItem="BnF-fD-2dx" secondAttribute="bottom" constant="8" id="2SJ-3c-j8H"/>
+                                    <constraint firstItem="UIb-8v-cmH" firstAttribute="leading" secondItem="Mn8-MO-E1S" secondAttribute="leading" constant="8" id="HrM-E5-kvY"/>
+                                    <constraint firstItem="BnF-fD-2dx" firstAttribute="centerY" secondItem="Mn8-MO-E1S" secondAttribute="centerY" multiplier="0.7" id="J9P-Q7-Weh"/>
+                                    <constraint firstItem="BnF-fD-2dx" firstAttribute="centerX" secondItem="Mn8-MO-E1S" secondAttribute="centerX" id="a1d-A0-2LA"/>
+                                    <constraint firstAttribute="width" secondItem="Mn8-MO-E1S" secondAttribute="height" multiplier="158:161" id="eS0-nZ-ZwV"/>
+                                    <constraint firstAttribute="trailing" secondItem="UIb-8v-cmH" secondAttribute="trailing" constant="8" id="tVr-TI-855"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myy-OT-hkV" customClass="CustomView" customModule="Auto_Layout_Practice" customModuleProvider="target">
+                                <rect key="frame" x="30" y="516" width="354" height="166"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gBA-D1-y1g">
+                                        <rect key="frame" x="147" y="29.5" width="60" height="57.5"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Zkh-Qs-pK1"/>
+                                            <constraint firstAttribute="width" constant="60" id="fGR-eV-qU1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpm-oa-k21">
+                                        <rect key="frame" x="8" y="96" width="338" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gBA-D1-y1g" firstAttribute="centerY" secondItem="myy-OT-hkV" secondAttribute="centerY" multiplier="0.7" id="9IL-sC-PNT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dpm-oa-k21" secondAttribute="trailing" constant="8" id="Egp-l4-Nap"/>
+                                    <constraint firstItem="gBA-D1-y1g" firstAttribute="centerX" secondItem="myy-OT-hkV" secondAttribute="centerX" id="Or6-L4-RFF"/>
+                                    <constraint firstItem="Dpm-oa-k21" firstAttribute="top" secondItem="gBA-D1-y1g" secondAttribute="bottom" constant="8" id="XC9-zP-7fL"/>
+                                    <constraint firstItem="Dpm-oa-k21" firstAttribute="leading" secondItem="myy-OT-hkV" secondAttribute="leading" constant="8" id="xl2-3h-ID7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="myy-OT-hkV" firstAttribute="height" secondItem="bDL-29-dpK" secondAttribute="height" id="3OZ-vj-aYA"/>
+                            <constraint firstItem="bDL-29-dpK" firstAttribute="top" secondItem="qoj-A0-eEm" secondAttribute="bottom" constant="82.5" id="5xe-B2-Ih5"/>
+                            <constraint firstItem="jBQ-Rk-dPC" firstAttribute="trailing" secondItem="834-uL-dXQ" secondAttribute="trailing" id="CTd-5E-jt0"/>
+                            <constraint firstItem="Mn8-MO-E1S" firstAttribute="leading" secondItem="bDL-29-dpK" secondAttribute="trailing" constant="28" id="Eia-UW-chq"/>
+                            <constraint firstItem="myy-OT-hkV" firstAttribute="top" secondItem="bDL-29-dpK" secondAttribute="bottom" constant="20" id="NRJ-Ep-ZKE"/>
+                            <constraint firstItem="bDL-29-dpK" firstAttribute="bottom" secondItem="Mn8-MO-E1S" secondAttribute="bottom" id="UhZ-vs-Szz"/>
+                            <constraint firstItem="bDL-29-dpK" firstAttribute="leading" secondItem="834-uL-dXQ" secondAttribute="leading" constant="30" id="VnD-7w-UKB"/>
+                            <constraint firstItem="jBQ-Rk-dPC" firstAttribute="top" secondItem="834-uL-dXQ" secondAttribute="top" id="WVe-8j-ziB"/>
+                            <constraint firstItem="myy-OT-hkV" firstAttribute="trailing" secondItem="Mn8-MO-E1S" secondAttribute="trailing" id="i8E-fA-XZ1"/>
+                            <constraint firstItem="myy-OT-hkV" firstAttribute="leading" secondItem="bDL-29-dpK" secondAttribute="leading" id="iy0-mB-aF0"/>
+                            <constraint firstItem="Mn8-MO-E1S" firstAttribute="top" secondItem="qoj-A0-eEm" secondAttribute="bottom" constant="82.5" id="jpt-Bf-mux"/>
+                            <constraint firstItem="jBQ-Rk-dPC" firstAttribute="leading" secondItem="834-uL-dXQ" secondAttribute="leading" id="o84-ZD-6Iq"/>
+                            <constraint firstItem="jBQ-Rk-dPC" firstAttribute="height" secondItem="834-uL-dXQ" secondAttribute="height" multiplier="0.4" id="wjZ-Wc-8Sy"/>
+                            <constraint firstItem="834-uL-dXQ" firstAttribute="trailing" secondItem="Mn8-MO-E1S" secondAttribute="trailing" constant="30" id="wve-fC-wiz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="834-uL-dXQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="LH5-MJ-7dl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GLT-gt-7Pk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2871.0144927536235" y="1174.5535714285713"/>
+            <point key="canvasLocation" x="2869.5652173913045" y="1111.6071428571429"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="HWR-JH-cc8">
@@ -617,12 +734,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="airplane" catalog="system" width="64" height="56"/>
+        <image name="car" catalog="system" width="64" height="46"/>
         <image name="home" width="36" height="36"/>
         <image name="home selected" width="36" height="36"/>
         <image name="logo" width="1024" height="1024"/>
         <image name="person" width="36" height="36"/>
         <image name="person outline" width="36" height="36"/>
         <image name="search" width="36" height="36"/>
+        <image name="tram.fill" catalog="system" width="48" height="64"/>
         <image name="travel bag" width="36" height="36"/>
         <namedColor name="TintColor">
             <color red="0.90299999713897705" green="0.29100000858306885" blue="0.097000002861022949" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
