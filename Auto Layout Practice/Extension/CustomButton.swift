@@ -18,6 +18,7 @@ class CustomButton : UIButton {
         super.init(coder: aDecoder)
         setRadiusAndShawdow()
     }
+    
     func setRadiusAndShawdow() {
         layer.cornerRadius = frame.height / 2
         clipsToBounds = true

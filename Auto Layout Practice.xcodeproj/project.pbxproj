@@ -10,6 +10,8 @@
 		C635072323AF749B0072FDBA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635072223AF749B0072FDBA /* SignInViewController.swift */; };
 		C6833C2623B0774500682D5C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6833C2523B0774500682D5C /* TabBarViewController.swift */; };
 		C6833C2823B0788C00682D5C /* UIVIewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6833C2723B0788C00682D5C /* UIVIewControllerExtension.swift */; };
+		C6B1A14023B0AE8700FEB8FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1A13F23B0AE8700FEB8FC /* HomeViewController.swift */; };
+		C6B1A14223B0B90C00FEB8FC /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1A14123B0B90C00FEB8FC /* TicketViewController.swift */; };
 		C6FA86E023AF23010006187B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86DF23AF23010006187B /* AppDelegate.swift */; };
 		C6FA86E223AF23010006187B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86E123AF23010006187B /* SceneDelegate.swift */; };
 		C6FA86E423AF23010006187B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA86E323AF23010006187B /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 		C635072223AF749B0072FDBA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C6833C2523B0774500682D5C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C6833C2723B0788C00682D5C /* UIVIewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtension.swift; sourceTree = "<group>"; };
+		C6B1A13F23B0AE8700FEB8FC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C6B1A14123B0B90C00FEB8FC /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		C6FA86DC23AF23010006187B /* Auto Layout Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Layout Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FA86DF23AF23010006187B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FA86E123AF23010006187B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				C6FA86E323AF23010006187B /* ViewController.swift */,
 				C6FA86FC23AF64740006187B /* SignUpViewController.swift */,
 				C6833C2523B0774500682D5C /* TabBarViewController.swift */,
+				C6B1A13F23B0AE8700FEB8FC /* HomeViewController.swift */,
+				C6B1A14123B0B90C00FEB8FC /* TicketViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +186,7 @@
 			files = (
 				C6FA86FB23AF619C0006187B /* UITextViewExtension.swift in Sources */,
 				C6FA86F723AF3D100006187B /* UIBUttonAndDesign.swift in Sources */,
+				C6B1A14223B0B90C00FEB8FC /* TicketViewController.swift in Sources */,
 				C6FA86FD23AF64740006187B /* SignUpViewController.swift in Sources */,
 				C6FA86F423AF33AF0006187B /* CustomButton.swift in Sources */,
 				C6FA86E423AF23010006187B /* ViewController.swift in Sources */,
@@ -189,6 +196,7 @@
 				C6833C2623B0774500682D5C /* TabBarViewController.swift in Sources */,
 				C6FA86E223AF23010006187B /* SceneDelegate.swift in Sources */,
 				C6833C2823B0788C00682D5C /* UIVIewControllerExtension.swift in Sources */,
+				C6B1A14023B0AE8700FEB8FC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

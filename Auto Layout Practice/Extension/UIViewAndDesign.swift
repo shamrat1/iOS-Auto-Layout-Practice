@@ -28,3 +28,11 @@ class CustomView : UIView {
         layer.shadowColor = UIColor(named: "SecondaryTintColor")?.cgColor
     }
 }
+extension UIView{
+    func designerViewWithRoundBorder(borderWidth: CGFloat, borderColor: UIColor){
+        layer.cornerRadius = frame.height / 2
+        clipsToBounds = true
+        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
+    }
+}
