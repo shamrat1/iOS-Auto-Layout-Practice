@@ -35,4 +35,13 @@ extension UIView{
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
     }
+    func setRadiusAndShawdowForView() {
+        layer.cornerRadius = 5
+        clipsToBounds = true
+        layer.masksToBounds = false
+        layer.shadowRadius = 5
+        layer.shadowOpacity = 0.5
+        layer.shadowOffset = CGSize(width: 3, height: 0)
+        layer.shadowColor = UIColor(named: "SecondaryTintColor")?.cgColor
+    }
 }
