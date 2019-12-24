@@ -1071,10 +1071,10 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDY-6z-rBe" customClass="CustomView" customModule="Auto_Layout_Practice" customModuleProvider="target">
                                                             <rect key="frame" x="5" y="5" width="142" height="167"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hotel" translatesAutoresizingMaskIntoConstraints="NO" id="J8X-n4-AKB">
-                                                                    <rect key="frame" x="5" y="0.0" width="132" height="142"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="J8X-n4-AKB">
+                                                                    <rect key="frame" x="5" y="0.0" width="132.00000000000023" height="142"/>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2W-BV-9Ny">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orange Beach. CA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2W-BV-9Ny">
                                                                     <rect key="frame" x="0.0" y="146" width="142" height="21"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="OPC-rd-E04"/>
@@ -1114,6 +1114,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="gg8-mI-9yf" firstAttribute="top" secondItem="rbE-bK-379" secondAttribute="top" constant="8" id="1fv-0m-CRO"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gg8-mI-9yf" secondAttribute="trailing" constant="20" symbolic="YES" id="4Jh-fI-YPo"/>
                                     <constraint firstAttribute="bottom" secondItem="XtC-TY-Pod" secondAttribute="bottom" constant="8" id="Jjz-YT-GfF"/>
                                     <constraint firstItem="XtC-TY-Pod" firstAttribute="top" secondItem="gg8-mI-9yf" secondAttribute="bottom" constant="8" id="PA2-UL-dEA"/>
                                     <constraint firstAttribute="trailing" secondItem="XtC-TY-Pod" secondAttribute="trailing" constant="8" id="VGC-FE-g0i"/>
@@ -1124,17 +1125,66 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mM2-qN-tI4">
                                 <rect key="frame" x="0.0" y="378" width="414" height="290"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVr-7i-PMl">
-                                        <rect key="frame" x="10" y="8" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Hotels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVr-7i-PMl">
+                                        <rect key="frame" x="10" y="8" width="173.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hdR-C9-akg">
+                                        <rect key="frame" x="8" y="65" width="398" height="225"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="piW-6l-Q22">
+                                            <size key="itemSize" width="180" height="224"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelsCell" id="jah-Rk-FzZ" customClass="HotelsCollectionViewCell" customModule="Auto_Layout_Practice" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.5" width="180" height="224"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7eH-Za-m9c">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="224"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bqk-0e-I1y" customClass="CustomView" customModule="Auto_Layout_Practice" customModuleProvider="target">
+                                                            <rect key="frame" x="5" y="5" width="170" height="214"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hotel" translatesAutoresizingMaskIntoConstraints="NO" id="1s0-84-MgO">
+                                                                    <rect key="frame" x="1" y="1" width="168" height="212"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="1s0-84-MgO" secondAttribute="trailing" constant="1" id="AFU-54-5FA"/>
+                                                                <constraint firstItem="1s0-84-MgO" firstAttribute="top" secondItem="Bqk-0e-I1y" secondAttribute="top" constant="1" id="U0b-M5-qvT"/>
+                                                                <constraint firstItem="1s0-84-MgO" firstAttribute="leading" secondItem="Bqk-0e-I1y" secondAttribute="leading" constant="1" id="dIj-Qg-YgU"/>
+                                                                <constraint firstAttribute="bottom" secondItem="1s0-84-MgO" secondAttribute="bottom" constant="1" id="wVa-e0-LgW"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Bqk-0e-I1y" secondAttribute="bottom" constant="5" id="6tz-7w-Hjs"/>
+                                                        <constraint firstItem="Bqk-0e-I1y" firstAttribute="top" secondItem="7eH-Za-m9c" secondAttribute="top" constant="5" id="8Sl-Nu-DBw"/>
+                                                        <constraint firstItem="Bqk-0e-I1y" firstAttribute="leading" secondItem="7eH-Za-m9c" secondAttribute="leading" constant="5" id="H6E-y1-RRK"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Bqk-0e-I1y" secondAttribute="trailing" constant="5" id="cYJ-3u-3yp"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="180" height="224"/>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hdR-C9-akg" secondAttribute="trailing" constant="8" id="2gw-49-JVa"/>
                                     <constraint firstItem="IVr-7i-PMl" firstAttribute="top" secondItem="mM2-qN-tI4" secondAttribute="top" constant="8" id="7P6-bK-ILH"/>
                                     <constraint firstItem="IVr-7i-PMl" firstAttribute="leading" secondItem="mM2-qN-tI4" secondAttribute="leading" constant="10" id="V7t-35-y4X"/>
+                                    <constraint firstItem="hdR-C9-akg" firstAttribute="leading" secondItem="mM2-qN-tI4" secondAttribute="leading" constant="8" id="d1q-gl-dxo"/>
+                                    <constraint firstAttribute="bottom" secondItem="hdR-C9-akg" secondAttribute="bottom" id="hcu-CJ-QWz"/>
+                                    <constraint firstItem="hdR-C9-akg" firstAttribute="top" secondItem="IVr-7i-PMl" secondAttribute="bottom" constant="23.5" id="l4m-49-Q17"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IVr-7i-PMl" secondAttribute="trailing" constant="20" symbolic="YES" id="zuN-xl-LSB"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nn3-7j-KPN">
@@ -1160,6 +1210,10 @@
                         <viewLayoutGuide key="safeArea" id="mZp-h0-hhe"/>
                     </view>
                     <navigationItem key="navigationItem" id="e13-N1-35k"/>
+                    <connections>
+                        <outlet property="collectionViewA" destination="XtC-TY-Pod" id="0ky-9Q-XqR"/>
+                        <outlet property="collectionViewB" destination="hdR-C9-akg" id="bnl-lH-pZS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOh-Pu-QmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

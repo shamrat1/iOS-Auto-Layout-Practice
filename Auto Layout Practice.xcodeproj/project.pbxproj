@@ -11,6 +11,7 @@
 		C6142D9523B2013D007F93FF /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6142D9423B2013C007F93FF /* ExploreViewController.swift */; };
 		C6142D9823B203DB007F93FF /* SIngleCellCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6142D9723B203DB007F93FF /* SIngleCellCollectionCollectionViewCell.swift */; };
 		C635072323AF749B0072FDBA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635072223AF749B0072FDBA /* SignInViewController.swift */; };
+		C671773D23B216F100A587D9 /* HotelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C671773C23B216F100A587D9 /* HotelsCollectionViewCell.swift */; };
 		C6833C2623B0774500682D5C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6833C2523B0774500682D5C /* TabBarViewController.swift */; };
 		C6833C2823B0788C00682D5C /* UIVIewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6833C2723B0788C00682D5C /* UIVIewControllerExtension.swift */; };
 		C6B1A14023B0AE8700FEB8FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1A13F23B0AE8700FEB8FC /* HomeViewController.swift */; };
@@ -33,6 +34,7 @@
 		C6142D9423B2013C007F93FF /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		C6142D9723B203DB007F93FF /* SIngleCellCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIngleCellCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		C635072223AF749B0072FDBA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C671773C23B216F100A587D9 /* HotelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsCollectionViewCell.swift; sourceTree = "<group>"; };
 		C6833C2523B0774500682D5C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C6833C2723B0788C00682D5C /* UIVIewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtension.swift; sourceTree = "<group>"; };
 		C6B1A13F23B0AE8700FEB8FC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C6142D9723B203DB007F93FF /* SIngleCellCollectionCollectionViewCell.swift */,
+				C671773C23B216F100A587D9 /* HotelsCollectionViewCell.swift */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			files = (
 				C6FA86FB23AF619C0006187B /* UITextViewExtension.swift in Sources */,
 				C6FA86F723AF3D100006187B /* UIBUttonAndDesign.swift in Sources */,
+				C671773D23B216F100A587D9 /* HotelsCollectionViewCell.swift in Sources */,
 				C6142D9523B2013D007F93FF /* ExploreViewController.swift in Sources */,
 				C6B1A14223B0B90C00FEB8FC /* TicketViewController.swift in Sources */,
 				C6FA86FD23AF64740006187B /* SignUpViewController.swift in Sources */,
