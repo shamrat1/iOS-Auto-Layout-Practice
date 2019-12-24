@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C6142D9323B1CA5E007F93FF /* FlightResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6142D9223B1CA5E007F93FF /* FlightResultViewController.swift */; };
+		C6142D9523B2013D007F93FF /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6142D9423B2013C007F93FF /* ExploreViewController.swift */; };
+		C6142D9823B203DB007F93FF /* SIngleCellCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6142D9723B203DB007F93FF /* SIngleCellCollectionCollectionViewCell.swift */; };
 		C635072323AF749B0072FDBA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635072223AF749B0072FDBA /* SignInViewController.swift */; };
 		C6833C2623B0774500682D5C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6833C2523B0774500682D5C /* TabBarViewController.swift */; };
 		C6833C2823B0788C00682D5C /* UIVIewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6833C2723B0788C00682D5C /* UIVIewControllerExtension.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		C6142D9223B1CA5E007F93FF /* FlightResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightResultViewController.swift; sourceTree = "<group>"; };
+		C6142D9423B2013C007F93FF /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		C6142D9723B203DB007F93FF /* SIngleCellCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIngleCellCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		C635072223AF749B0072FDBA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C6833C2523B0774500682D5C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C6833C2723B0788C00682D5C /* UIVIewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtension.swift; sourceTree = "<group>"; };
@@ -59,9 +63,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6142D9623B203B4007F93FF /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				C6142D9723B203DB007F93FF /* SIngleCellCollectionCollectionViewCell.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
 		C6833C2423B0738600682D5C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C6142D9623B203B4007F93FF /* Collection View */,
 				C635072223AF749B0072FDBA /* SignInViewController.swift */,
 				C6FA86E323AF23010006187B /* ViewController.swift */,
 				C6FA86FC23AF64740006187B /* SignUpViewController.swift */,
@@ -69,6 +82,7 @@
 				C6B1A13F23B0AE8700FEB8FC /* HomeViewController.swift */,
 				C6B1A14123B0B90C00FEB8FC /* TicketViewController.swift */,
 				C6142D9223B1CA5E007F93FF /* FlightResultViewController.swift */,
+				C6142D9423B2013C007F93FF /* ExploreViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +203,7 @@
 			files = (
 				C6FA86FB23AF619C0006187B /* UITextViewExtension.swift in Sources */,
 				C6FA86F723AF3D100006187B /* UIBUttonAndDesign.swift in Sources */,
+				C6142D9523B2013D007F93FF /* ExploreViewController.swift in Sources */,
 				C6B1A14223B0B90C00FEB8FC /* TicketViewController.swift in Sources */,
 				C6FA86FD23AF64740006187B /* SignUpViewController.swift in Sources */,
 				C6142D9323B1CA5E007F93FF /* FlightResultViewController.swift in Sources */,
@@ -198,6 +213,7 @@
 				C6FA86E023AF23010006187B /* AppDelegate.swift in Sources */,
 				C6FA86F923AF53CE0006187B /* UIViewAndDesign.swift in Sources */,
 				C6833C2623B0774500682D5C /* TabBarViewController.swift in Sources */,
+				C6142D9823B203DB007F93FF /* SIngleCellCollectionCollectionViewCell.swift in Sources */,
 				C6FA86E223AF23010006187B /* SceneDelegate.swift in Sources */,
 				C6833C2823B0788C00682D5C /* UIVIewControllerExtension.swift in Sources */,
 				C6B1A14023B0AE8700FEB8FC /* HomeViewController.swift in Sources */,

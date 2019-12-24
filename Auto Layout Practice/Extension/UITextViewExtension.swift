@@ -11,7 +11,7 @@ import UIKit
 extension UITextField {
     
     func setRightViewImage(image : UIImage, isSecure : Bool = false){
-        let imageView = UIImageView(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
         imageView.image = image
         
         if isSecure {
